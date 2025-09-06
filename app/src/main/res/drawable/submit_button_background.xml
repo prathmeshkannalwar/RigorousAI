@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"> <!-- Use "oval" for a perfect circle -->
+
+    <!-- Transparent background -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- A solid black border with a 1dp width -->
+    <stroke
+        android:width="3dp"
+        android:color="#000000" />
+
+</shape>

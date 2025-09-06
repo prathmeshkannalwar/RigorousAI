@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- You might already have your app theme here -->
+
+    <!-- ADD THIS NEW STYLE -->
+    <style name="ShapeAppearance.App.RoundedCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item> <!-- Adjust this value for more or less rounding -->
+    </style>
+
+</resources>

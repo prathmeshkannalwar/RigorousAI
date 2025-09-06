@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ADD THESE NEW COLORS -->
+    <color name="text_color_light">#1C1C1E</color> <!-- A very dark, soft gray (not pure black) -->
+    <color name="text_color_dark">#F2F2F7</color>  <!-- A nice, bright off-white -->
+
+    <color name="placeholder_text_color_light">#8A8A8E</color> <!-- A good medium gray for light backgrounds -->
+    <color name="placeholder_text_color_dark">#8D8D93</color> <!-- A slightly dimmer gray for dark -->
+
+    <color name="icon_tint_color">#403D3D</color>
+</resources>

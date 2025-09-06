@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <!-- Watermark Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Rigorous AI"
+        android:layout_marginBottom="100dp"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:alpha="0.10" />
+
+    <TextView
+        android:id="@+id/tv_version_watermark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="2.0"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="150sp"
+        android:textStyle="bold"
+        android:alpha="0.15" />
+
+    <!-- Main Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/rigorousbgfreelogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rigorous AI"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="3dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gemini_api_logo"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.App.RoundedCorners" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- Content Area -->
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tVResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="How can I Help You?"
+                android:textColor="?attr/primaryTextColor"
+                android:textSize="17dp" />
+        </ScrollView>
+
+        <!-- Input Area -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/eTPrompt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/transparent_border_bg"
+                android:hint="Enter Your Prompt"
+                android:inputType="text"
+                android:minHeight="50dp"
+                android:padding="10dp"
+                android:textColor="#03A9F4"
+                android:textColorHint="?attr/colorOnSurface" />
+
+            <!--  THE FIX IS HERE -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/submit_button_background"
+                android:text=">"
+                android:paddingBottom="16dp"
+                android:paddingLeft="2dp"
+                android:textColor="#03A9F4"
+                android:textSize="35dp"/>
+            <!-- END OF FIX -->
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

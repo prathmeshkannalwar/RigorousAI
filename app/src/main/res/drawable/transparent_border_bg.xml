@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- The background remains transparent -->
+    <solid android:color="@android:color/transparent" />
+
+    <!--- THE FIX IS HERE -
+    Instead of a hardcoded color like #ffffff, we use "?attr/colorOnSurface".
+    This is a theme attribute that automatically becomes a light color in dark mode
+    and a dark color in light mode.
+    -->
+    <stroke
+        android:width="3dp"
+        android:color="?attr/colorOnSurface" />
+
+    <!--
+    I've also adjusted the radius to a more standard value.
+    This gives a cleaner, slightly rounded corner look.
+    -->
+    <corners android:radius="100dp" />
+
+</shape>

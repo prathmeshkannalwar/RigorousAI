@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- The container for the expanded menu items -->
+    <LinearLayout
+        android:id="@+id/layout_expanded_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/menu_background"
+        android:padding="8dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:alpha="0.65">
+
+        <!-- All your menu buttons -->
+        <ImageButton
+            android:id="@+id/btn_new_chat"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@android:drawable/ic_menu_add"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginEnd="16dp"/>
+        <ImageButton
+            android:id="@+id/btn_copy_response"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/outline_content_copy_24"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+        <ImageButton
+            android:id="@+id/btn_share_response"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginStart="16dp"/>
+        <ImageButton
+            android:id="@+id/btn_settings"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@android:drawable/ic_menu_manage"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+    <!-- The main floating button (visible when collapsed) -->
+    <ImageView
+        android:id="@+id/btn_collapsed_menu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/rigorousbgfreelogo"
+        android:layout_gravity="center" />
+
+</FrameLayout>
