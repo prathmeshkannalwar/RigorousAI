@@ -1,6 +1,9 @@
-# RigorousAI
+# Rigorous AI
 Rigorous AI is a smart Android chatbot powered by Google's Gemini API, designed to deliver human-like, real-time conversations.
 With a clean, intuitive interface and rich-text responses rendered via Markwon, the app transforms static prompts into dynamic, meaningful interactions.
+
+https://github.com/user-attachments/assets/dd5ec59b-0a46-40d5-8b22-6dda7e824bec
+
 
 🚀 Features
 
