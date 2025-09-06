@@ -41,18 +41,6 @@ GenerativeAI
 
 PorterDuff – for image and graphics blending
 
-📂 Project Structure
-RigorousAI/
-│── app/                # Main Android app source code
-│   ├── java/           # Kotlin source files
-│   ├── res/            # Layouts, drawables, and UI resources
-│   └── AndroidManifest.xml
-│
-├── gradle/             # Gradle wrapper
-├── build.gradle        # Project build configuration
-├── settings.gradle     # Settings and module includes
-└── README.md           # Project documentation
-
 ⚡ Getting Started
 Prerequisites
 
